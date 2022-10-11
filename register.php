@@ -7,7 +7,7 @@ require_once "config/database.php";
 
 $email = $firstname = $lastname = $username = $password = $confirmPassword = "";
 $emailErr = $firstnameErr = $lastnameErr = $usernameErr = $passwordErr = $confirmPasswordErr = "";
-$regExOnlyLetters = "/^[a-zA-Z]+$/";
+$regExOnlyLetters = "/^[a-zA-Z\s]+$/";
 $regExLettersAndNumbers = "/^[a-zA-Z0-9\s]+$/";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
